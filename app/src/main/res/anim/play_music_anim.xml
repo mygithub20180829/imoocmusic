@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    >
+<!--    什么插值器 android:interpolator="@android:anim/linear_interpolator"-->
+<!--    //自定义动画-->
+<!--    //转动 privoX设置转动中心  duration动画转动的时间-->
+<!--    android:repeatCount="infinite"  让光盘一直转动-->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="@integer/play_music_anim_duration"
+        android:repeatCount="infinite"
+        ></rotate>
+
+</set>

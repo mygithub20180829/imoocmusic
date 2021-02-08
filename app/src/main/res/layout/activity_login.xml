@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activitys.LoginActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/nav_bar" />
+
+    <ImageView
+        android:layout_width="388dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/login"></ImageView>
+
+
+    <views.InputView
+        android:id="@+id/input_phone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/inputViewHeight"
+    android:layout_marginTop="60dp"
+    app:input_hiht="手机号"
+    app:is_password="false"
+    app:input_icon="@drawable/ic_launcher_project_shouji" />
+    <View
+        style="@style/line"
+        ></View>
+    <views.InputView
+        android:id="@+id/input_password"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/inputViewHeight"
+    app:input_hiht="密码"
+    app:is_password="true"
+    app:input_icon="@drawable/ic_launcher_project_suo" />
+    <View
+        style="@style/line"
+        ></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginSize"
+        android:text="立即注册"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/infoSize"
+        android:textColor="@color/mainColor"
+        android:onClick="onRegisterClick"
+        ></TextView>
+
+    <Button
+        style="@style/commitBtn"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onCommitClick"
+        android:text="登录"></Button>
+
+
+</LinearLayout>

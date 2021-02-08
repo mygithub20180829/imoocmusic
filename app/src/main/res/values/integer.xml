@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    动画执行时间的规定-->
+    <integer name="anim_duration">20</integer>
+<!--    光盘转动动画所需要的时间 10s-->
+    <integer name="play_music_anim_duration">10000</integer>
+<!--    指针指向光盘动画-->
+    <integer name="play_needle_anim_duration">6000</integer>
+</resources>

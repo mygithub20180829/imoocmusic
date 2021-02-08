@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imoocmusicdemo">
+
+    <!-- android:roundIcon="@mipmap/ic_launcher_round" 8.0以后的自适应 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Android 9.0 前台权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_project_baoerjie"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name="service.MainService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name="service.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activitys.PlayMusicActivity" />
+        <activity android:name=".activitys.AlbumListActivity" />
+        <activity android:name=".activitys.ChangePasswordActivity" />
+        <activity android:name=".activitys.MeActivity" />
+        <activity android:name=".activitys.RegisterActivity" />
+        <activity android:name=".activitys.LoginActivity" />
+        <activity android:name=".activitys.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.MainActivity" />
+    </application>
+
+</manifest>
